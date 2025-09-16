@@ -1,3 +1,9 @@
-export default function Home() {
-  return <>tárcila</>;
+import Home from "./(sections)/Home";
+
+export default function Page() {
+  return (
+    <>
+      <Home />
+    </>
+  );
 }

@@ -1,0 +1,12 @@
+.home {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 5.25rem);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
