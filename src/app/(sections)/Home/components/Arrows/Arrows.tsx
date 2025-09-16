@@ -25,8 +25,8 @@ export const Arrows = ({
         <Image
           src="/icons/arrow-outlined-left.png"
           alt="Seta para esquerda"
-          width={32}
-          height={32}
+          width={24}
+          height={24}
         />
       </button>
       <button
@@ -39,8 +39,8 @@ export const Arrows = ({
         <Image
           src="/icons/arrow-outlined-right.png"
           alt="Seta para direita"
-          width={32}
-          height={32}
+          width={24}
+          height={24}
         />
       </button>
     </div>

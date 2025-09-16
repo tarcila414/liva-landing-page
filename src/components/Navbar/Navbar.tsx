@@ -20,8 +20,8 @@ export default function Navbar() {
           priority
         />
         <nav className={styles.desktopMenu}>
-          <a href="#">Home</a>
-          <a href="#">Sobre a Liva</a>
+          <a href="#home">Home</a>
+          <a href="#about">Sobre a Liva</a>
           <a href="#">Empreendimentos</a>
           <a href="#">Notícias</a>
           <a href="#">Contato</a>

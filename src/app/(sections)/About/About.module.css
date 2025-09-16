@@ -1,0 +1,63 @@
+.about {
+  height: calc(100vh - 5.25rem);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about h2 {
+  font-weight: 300;
+  font-style: light;
+  font-size: 1.75rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.about h2 > span {
+  font-weight: 500;
+  font-style: medium;
+  color: var(--gray-500);
+}
+
+.about p {
+  font-weight: 300;
+  font-style: light;
+  font-size: 0.875rem;
+  line-height: 160%;
+  letter-spacing: 0%;
+  margin-bottom: 1.5rem;
+}
+
+.logo {
+  display: none;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: start;
+
+  margin: 0 1.563rem;
+}
+
+@media (min-width: 768px) {
+  .about {
+    flex-direction: row;
+    gap: 8.125rem;
+    padding: 0 3rem;
+  }
+  .logo {
+    display: block;
+  }
+
+  .about h2 {
+    font-size: 3rem;
+  }
+
+  .p {
+    font-size: 1.125rem;
+  }
+}

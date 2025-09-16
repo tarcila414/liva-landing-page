@@ -12,6 +12,10 @@
   --primary-400: #dcf8b1;
 }
 
+button {
+  font-family: "Urbane";
+}
+
 html,
 body {
   font-family: "Urbane";
@@ -23,16 +27,6 @@ body {
 a {
   text-decoration: none;
   color: inherit;
-}
-
-button {
-  cursor: pointer;
-  border: none;
-  background: #009970;
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  border-radius: 4px;
-  font-weight: 600;
 }
 
 section {
