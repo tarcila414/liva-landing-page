@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Liva Landing Page
 
-## Getting Started
+This project is a landing page built with [Next.js](https://nextjs.org/) and [React](https://react.dev/), focused on responsiveness, SEO, UI best practices, and form validation.
 
-First, run the development server:
+## About the project
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The landing page presents institutional information, project sections, and a contact form. The goal is to provide a modern and efficient experience for visitors and potential clients.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Design inspiration
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This landing page was inspired by a Figma design.  
+![Figma Screenshot Mobile](./public/design-inspiration/mob.png)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+![Figma Screenshot Desktop](./public/design-inspiration/desk.png)
 
-## Learn More
+### Main technologies used
 
-To learn more about Next.js, take a look at the following resources:
+- **CSS Modules**: For modular component styling without scope conflicts.
+- **React Hook Form** + **Yup**: For managing and validating contact form data, ensuring clear feedback and input rules.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## How to run the project
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Install dependencies**:
+   ```sh
+   npm install
+   ```
+2. **Start the development server**:
+   ```sh
+   npm run dev
+   ```
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Deploy on Vercel
+## Project structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Source code in [`src/`](src/)
+- Reusable components in [`src/app/components/`](src/app/components/)
+- Contact form implemented in [`src/app/(sections)/Contact/components/Form/Form.tsx`](<src/app/(sections)/Contact/components/Form/Form.tsx>) using [`react-hook-form`](https://react-hook-form.com/) and [`yup`](https://github.com/jquense/yup).
+- Form styles in [`src/app/(sections)/Contact/components/Form/Form.module.css`](<src/app/(sections)/Contact/components/Form/Form.module.css>)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Form validation
+
+Contact form fields are validated with [`yup`](https://github.com/jquense/yup), integrated with [`react-hook-form`](https://react-hook-form.com/), ensuring submitted data is correct and complete.
+
+## Useful scripts
+
+- `npm run dev`: Starts the development environment.
+- `npm run build`: Generates the production build.
+- `npm run start`: Starts the server in production mode.
