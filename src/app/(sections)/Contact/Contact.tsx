@@ -5,7 +5,7 @@ import { Consultants } from "./components/Consultants/Consultants";
 
 export const Contact = () => {
   return (
-    <section id="contato" className={styles.contact}>
+    <section id="contact" className={styles.contact}>
       <div className={styles.container}>
         <div className={styles.info}>
           <h2>Fale agora com um consultor de vendas</h2>

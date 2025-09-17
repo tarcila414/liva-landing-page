@@ -25,7 +25,7 @@ export const Projects = () => {
   ];
 
   return (
-    <section id="empreendimentos" className={styles.projects}>
+    <section id="projects" className={styles.projects}>
       <h3>
         Confira todos os <span>empreendimentos da Liva</span>
       </h3>
