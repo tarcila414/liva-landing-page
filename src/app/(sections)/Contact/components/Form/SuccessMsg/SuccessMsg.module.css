@@ -1,0 +1,32 @@
+.successMsg {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 2rem;
+}
+
+.successMsg h1 {
+  font-weight: 600;
+  font-style: Demi Bold;
+  font-size: 1.125rem;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: var(--success-message-title);
+}
+
+.successMsg p {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 1rem;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #6f6f6f;
+}

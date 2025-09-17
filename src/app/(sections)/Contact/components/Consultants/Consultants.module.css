@@ -1,0 +1,38 @@
+.consultants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: -1rem;
+  grid-area: consultants;
+}
+
+.consultants h1 {
+  font-weight: 300;
+  font-style: Light;
+  font-size: 0.75rem;
+  line-height: 160%;
+  letter-spacing: 0%;
+}
+
+.consultants .imagesContainer {
+  display: flex;
+}
+
+.consultants img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 2px solid white;
+  object-fit: cover;
+  margin-left: -12px;
+}
+
+.consultants img:first-child {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  .consultants {
+    align-items: start;
+  }
+}

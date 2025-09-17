@@ -1,0 +1,75 @@
+.contact {
+  padding: 4rem 0rem;
+  background-color: var(--gray-900);
+  color: white;
+  position: relative;
+}
+
+.imgBackground {
+  display: none;
+}
+
+.container {
+  display: grid;
+  grid-template:
+    "info"
+    "form"
+    "consultants";
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin: 4rem 1.563rem;
+}
+
+.info {
+  grid-area: info;
+  font-family: "Urbane";
+  color: #ffffff;
+}
+.info h2 {
+  font-size: 2.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.info p {
+  margin-bottom: 2rem;
+  font-family: Urbane;
+  font-weight: 300;
+  font-style: light;
+  font-size: 1.125rem;
+  line-height: 160%;
+  letter-spacing: 0%;
+}
+
+.info p > span {
+  font-weight: 500;
+  font-style: medium;
+}
+
+@media (min-width: 768px) {
+  .container {
+    position: relative;
+    grid-template:
+      "info form"
+      "info form"
+      "consultants form";
+    align-items: center;
+    margin: 0rem 5rem 0rem 3rem;
+    z-index: 2;
+  }
+
+  .imgBackground {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 38%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .info {
+    max-width: 70%;
+    padding-right: 2rem;
+  }
+}

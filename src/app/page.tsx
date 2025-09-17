@@ -1,6 +1,7 @@
 import ScrollSpy from "@/components/ScrollSpy/ScrollSpy";
 import About from "./(sections)/About";
 import Home from "./(sections)/Home";
+import Contact from "./(sections)/Contact";
 
 export default function Page() {
   return (
@@ -8,6 +9,7 @@ export default function Page() {
       <ScrollSpy />
       <Home />
       <About />
+      <Contact />
     </>
   );
 }
