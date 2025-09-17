@@ -1,0 +1,52 @@
+.projects {
+  text-align: start;
+}
+
+.projects > h3 {
+  margin-bottom: 2rem;
+  font-family: Urbane;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 2rem;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+
+.projects h3 > span {
+  color: var(--gray-500);
+}
+
+.loadMore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  margin-top: 3rem;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  gap: 1rem;
+}
+
+.highlight {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+@media (min-width: 768px) {
+  .cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+
+  .highlight {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+}
